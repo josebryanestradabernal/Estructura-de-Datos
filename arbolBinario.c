@@ -43,22 +43,22 @@ void inOrden(Arbol root){
   }
 }
 int main(){
-Arbol root;
-insertData(&root,8);
-insertData(&root,5);
-insertData(&root,10);
-insertData(&root,12);
-insertData(&root,9);
-insertData(&root,2);
-insertData(&root,1);
-insertData(&root,0);
-insertData(&root,17);
-insertData(&root,6);
-preOrden(root);
-printf("\n");
-postOrden(root);
-printf("\n");
-inOrden(root);
-printf("\n");
+  Arbol root;
+  insertData(&root,8);
+  insertData(&root,5);
+  insertData(&root,10);
+  insertData(&root,12);
+  insertData(&root,9);
+  insertData(&root,2);
+  insertData(&root,1);
+  insertData(&root,0);
+  insertData(&root,17);
+  insertData(&root,6);
+  preOrden(root);
+  printf("\n");
+  postOrden(root);
+  printf("\n");
+  inOrden(root);
+  printf("\n");
 
-}
+  }
