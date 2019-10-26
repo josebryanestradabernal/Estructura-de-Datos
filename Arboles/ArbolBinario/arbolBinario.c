@@ -1,4 +1,6 @@
-
+#include "arbolBinario.h"
+#include <stdio.h>
+#include <stdlib.h>
 void  insertData(Arbol *root,int elemento){
   if(*root==NULL){
     nodo *node=(nodo*)malloc(sizeof(nodo));

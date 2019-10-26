@@ -1,3 +1,5 @@
+#ifndef __ARBOLBINARIO_H__
+#define __ARBOLBINARIO_H__
 /*
 Autor: Estrada Bernal Jose Bryan
 fecha: 24 de Oct del 2019
@@ -7,8 +9,7 @@ a la derecha
 */
 
 //Estructura del arbol
-#ifndef __ArbolBinario_H
-#define __ArbolBinario_H
+
 typedef struct nodo{
   int elemento;
   struct nodo *derecho;
