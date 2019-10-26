@@ -1,8 +1,9 @@
-compile:arbolBinario.o
-	gcc Implentacion.c -o Arbol
+compile:
+	gcc -c arbolBinario.c -o arbolBinario.o
+	gcc Implementacion.c arbolBinario.o -o Arbol
 
-arbolBinario.o: arbolBinario.c arbolBinario.h
-	gcc arbolBinario.c -c arbolBinario.o
+run:
+	./Arbol
 clean:
 	rm -rf *.o
 	rm Arbol
