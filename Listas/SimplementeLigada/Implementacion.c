@@ -10,3 +10,4 @@ int main (){
 	eliminar(&list,1);
 	printf("%d ",mostrar(&list,0));
 	}
+      
