@@ -26,9 +26,13 @@ void preOrden(Arbol root){
 
   }
 }
-int Buscar (Arbol root){
-
-  
+int Buscar (Arbol root,int elemento){
+  if (root==NULL)return 0;
+  else
+  if (root->elemento==elemento)return 1;
+  if (root->elemento>elemento)
+    return Buscar(root->izquierdo);
+  else return Buscar(root->derecho);
 }
 void postOrden(Arbol root){
   if (root==NULL)return;
