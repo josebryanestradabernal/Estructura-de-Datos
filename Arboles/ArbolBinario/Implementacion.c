@@ -19,5 +19,5 @@ int main(){
   printf("\n");
   inOrden(root);
   printf("\n");
-
+  Buscar(root,1)?printf("Encontrado\n"):printf("No encontrado\n");
   }
