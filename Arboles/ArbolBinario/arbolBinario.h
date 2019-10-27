@@ -21,4 +21,5 @@ void insertData(Arbol *root,int elemento);
 void preOrden(Arbol root);
 void postOrden(Arbol root);
 void inOrden(Arbol root);
+int Buscar(Arbol root);
 #endif

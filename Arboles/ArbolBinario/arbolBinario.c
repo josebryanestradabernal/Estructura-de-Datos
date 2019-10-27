@@ -26,6 +26,10 @@ void preOrden(Arbol root){
 
   }
 }
+int Buscar (Arbol root){
+
+  
+}
 void postOrden(Arbol root){
   if (root==NULL)return;
   else{
