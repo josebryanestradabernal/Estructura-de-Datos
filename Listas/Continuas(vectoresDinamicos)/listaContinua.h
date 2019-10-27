@@ -12,7 +12,7 @@ int cantElementos;
 /*Permite inicializar la lista (reservarle memoria inicializar en 0
  * el numero de elementos que contiene
  * */
-int inicializarLista(LISTA list);
+int inicializarLista(LISTA *list);
 /*
  *incrementa la memoria reseervada para introducir un nuevo elemento
  *consideraciones:
@@ -22,11 +22,11 @@ int inicializarLista(LISTA list);
 int agregar(LISTA list,int Elemento);
 /*retorna el elemento en una dada posicion dentro de la lista
  * Consideraciones:
- * la posicion no existe, retornara 0 para no causar error aparte se 
+ * la posicion no existe, retornara 0 para no causar error aparte se
  * imprimira en pantalla el error para ser explicito
  * */
 int mostrar (LISTA list,int Posicion);
-/* Elimina el elemento por posicion del array 
+/* Elimina el elemento por posicion del array
  * si se elimina con exito retorna 0
  * si ocurre error de memoria retorna 1
  * */

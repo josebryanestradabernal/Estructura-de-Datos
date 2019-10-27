@@ -39,14 +39,3 @@ void eliminar (LISTA *list,int posici){
 		}
 	else return 0;
 	}
-
-int main (){
-	LISTA list;
-	agregar(&list,3);
-	agregar(&list,4);
-	agregar(&list,5);
-	printf("%d ",mostrar(&list,0));
-	eliminar(&list,0);
-	eliminar(&list,1);
-	printf("%d ",mostrar(&list,0));
-	}
