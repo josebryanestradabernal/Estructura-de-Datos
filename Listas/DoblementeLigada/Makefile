@@ -1,8 +1,8 @@
 compile:
-	gcc -c listaContinua.c -o listaContinua.o
-	gcc Implementacion.c listaContinua.o -o listaContinua
+	gcc -c ligadaDoble.c -o ligadaDoble.o
+	gcc Implementacion.c ligadaDoble.o -o ligadaDoble
 run:
-	./listaContinua
+	./ligadaDoble
 clean:
 	rm -rf *.o
-	rm listaContinua
+	rm ligadaDoble

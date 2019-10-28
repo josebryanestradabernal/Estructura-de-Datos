@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "ligadaDoble.h"
 void agregar (LISTA *lista,int elemento){
   if (*lista==NULL){
@@ -17,8 +18,14 @@ void agregar (LISTA *lista,int elemento){
   }
 }
 void eliminar(LISTA *lista,int posicion){
-  
-}
-int mostrar (LISTA *lista){
 
+}
+int mostrar (LISTA *lista,int posicion){
+  int po=0;
+  struct nodo *aux=*lista;
+  for (;aux->siguiente!=NULL,po<posicion;po++){
+    aux=aux->siguiente;
+  }
+  if(po==posicion)return aux->elemento;
+  return 0;
 }

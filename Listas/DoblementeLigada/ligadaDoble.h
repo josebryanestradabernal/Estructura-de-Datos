@@ -10,6 +10,6 @@ typedef struct nodo {
 }*LISTA;
 void agregar (LISTA *lista,int elemento);
 void eliminar(LISTA *lista,int posicion);
-int mostrar(LISTA *lsita);
+int mostrar(LISTA *lista,int posicion);
 
 #endif
