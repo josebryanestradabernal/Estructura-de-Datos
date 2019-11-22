@@ -20,4 +20,6 @@ int main(){
   inOrden(root);
   printf("\n");
   Buscar(root,17)?printf("Encontrado\n"):printf("No encontrado\n");
+  elimina(&root,8);
+  preOrden(root);
   }

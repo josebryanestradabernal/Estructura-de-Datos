@@ -22,4 +22,6 @@ void preOrden(Arbol root);
 void postOrden(Arbol root);
 void inOrden(Arbol root);
 int Buscar(Arbol root,int elemento);
+Arbol unirABB(Arbol izq, Arbol der);
+void elimina(Arbol *arbol, int x);
 #endif

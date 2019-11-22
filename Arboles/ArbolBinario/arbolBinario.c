@@ -49,3 +49,30 @@ void inOrden(Arbol root){
     inOrden(root->derecho);
   }
 }
+Arbol unirABB(Arbol izq, Arbol der)
+{
+    if(izq==NULL) return der;
+    if(der==NULL) return izq;
+
+    Arbol centro = unirABB(izq->derecho, der->izquierdo);
+    izq->derecho = centro;
+    der->izquierdo = izq;
+    return der;
+}
+
+void elimina(Arbol *arbol, int x)
+{
+     if(*arbol==NULL) return;
+
+     if((*arbol)->elemento>x)
+         elimina(&(*arbol)->izquierdo, x);
+     else if(x>(*arbol)->elemento)
+         elimina(&(*arbol)->derecho, x);
+
+     else
+     {
+         Arbol p = *arbol;
+         *arbol = unirABB((*arbol)->izquierdo, (*arbol)->derecho);
+         free (p);
+     }
+}
