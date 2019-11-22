@@ -39,3 +39,10 @@
         list->cantElementos=aux.cantElementos;
         return 0;
       }
+    void mostrarLista(LISTA list){
+      LISTA aux=list;
+      for (int i=0;i<list->cantElementos;i++){
+        printf("%i ",*(aux->ArrayElementos+i));
+      }
+      printf("\n");
+    }

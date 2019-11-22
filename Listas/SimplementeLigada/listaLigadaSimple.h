@@ -9,10 +9,11 @@
 typedef struct nodo{
 	int element;
 	struct nodo *siguiente;
-	} *LISTA;	
+	} *LISTA;
 void inicializarLista (LISTA *list);
 void agregar(LISTA *list,int element);
 void eliminar (LISTA *list,int posicion);
 int mostrar(LISTA *list, int posicion);
+void mostrarLista(LISTA list);
 
 #endif

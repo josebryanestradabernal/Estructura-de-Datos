@@ -31,6 +31,6 @@ int mostrar (LISTA list,int Posicion);
  * si ocurre error de memoria retorna 1
  * */
 int eliminar (LISTA list,int Posicion);
-
+void mostrarLista(LISTA list);  
 
 #endif

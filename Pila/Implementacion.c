@@ -5,4 +5,6 @@ int main(){
   push(&pila,6);
   push(&pila,7);
   printf("%i\n",pop(&pila));
+  push(&pila,7);
+  mostrarPila(pila);
 }

@@ -62,3 +62,11 @@ int mostrar (LISTA lista,int posicion){
   if (aux!=NULL)return aux->elemento;
   return 0;
 }
+void mostrarLista (LISTA list){
+  LISTA aux=list;
+  while (aux!=NULL){
+      printf("%i ",aux->elemento);
+      aux=aux->siguiente;
+  }
+  printf("\n");
+}

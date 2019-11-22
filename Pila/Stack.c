@@ -26,3 +26,11 @@ if (*pila!=NULL){
 else if (*pila==NULL)printf("Vacio");
 return aux;
 }
+void mostrarPila (STACK list){
+  STACK aux=list;
+  while (aux!=NULL){
+      printf("%i ",aux->elemento);
+      aux=aux->siguiente;
+  }
+  printf("\n");
+}

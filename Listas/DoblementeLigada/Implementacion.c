@@ -6,4 +6,5 @@ int main (){
   for (int a=0;a<=3;a++)printf("%i \n",mostrar(list,a));
   eliminar(&list,0);
   printf("%i \n",mostrar(list,0));
+  mostrarLista(list);
 }

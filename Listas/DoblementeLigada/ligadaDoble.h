@@ -11,5 +11,6 @@ typedef struct nodo {
 void agregar (LISTA *lista,int elemento);
 void eliminar(LISTA *lista,int posicion);
 int mostrar(LISTA lista,int posicion);
+void mostrarLista(LISTA lista);
 
 #endif

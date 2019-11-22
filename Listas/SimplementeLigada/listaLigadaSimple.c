@@ -39,3 +39,12 @@ void eliminar (LISTA *list,int posici){
 		}
 	else return 0;
 	}
+
+	void mostrarLista (LISTA list){
+	  LISTA aux=list;
+	  while (aux!=NULL){
+	      printf("%i ",aux->element);
+	      aux=aux->siguiente;
+	  }
+	  printf("\n");
+	}
