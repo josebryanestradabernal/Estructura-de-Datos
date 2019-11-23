@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
-  Arbol root;
+  Arbol root=NULL;
   insertData(&root,8);
   insertData(&root,5);
   insertData(&root,10);
@@ -13,13 +13,6 @@ int main(){
   insertData(&root,0);
   insertData(&root,17);
   insertData(&root,6);
-  preOrden(root);
-  printf("\n");
-  postOrden(root);
-  printf("\n");
-  inOrden(root);
-  printf("\n");
-  Buscar(root,17)?printf("Encontrado\n"):printf("No encontrado\n");
-  elimina(&root,8);
+  elimina(&root,0);
   preOrden(root);
   }

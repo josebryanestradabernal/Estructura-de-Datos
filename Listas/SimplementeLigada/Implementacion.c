@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"listaLigadaSimple.h"
 int main (){
-	LISTA list;
+	LISTA list=NULL;
 	agregar(&list,3);
 	agregar(&list,4);
 	agregar(&list,5);
