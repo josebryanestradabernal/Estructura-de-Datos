@@ -26,11 +26,9 @@ if (*pila!=NULL){
 else if (*pila==NULL)printf("Vacio");
 return aux;
 }
-void mostrarPila (STACK list){
-  STACK aux=list;
-  while (aux!=NULL){
-      printf("%i ",aux->elemento);
-      aux=aux->siguiente;
+void mostrarPila (STACK pila){
+  STACK aux=NULL;
+  while (pila!=NULL){
+    numero=pop(&pila)
   }
-  printf("\n");
 }
