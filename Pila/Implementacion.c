@@ -6,5 +6,6 @@ int main(){
   push(&pila,7);
   printf("%i\n",pop(&pila));
   push(&pila,7);
-  mostrarPila(pila);
+  mostrarPila(&pila);
+  mostrarPila(&pila);
 }

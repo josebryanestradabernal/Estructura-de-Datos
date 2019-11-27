@@ -26,9 +26,16 @@ if (*pila!=NULL){
 else if (*pila==NULL)printf("Vacio");
 return aux;
 }
-void mostrarPila (STACK pila){
+void mostrarPila (STACK *pila){
   STACK aux=NULL;
-  while (pila!=NULL){
-    numero=pop(&pila)
+  int numero=0;
+  while ((*pila)!=NULL){
+    numero=pop(pila);
+    printf("%i ",numero);
+    push(&aux,numero);
+  }
+  printf("\n");
+  while (aux!=NULL){
+    push(&(*pila),pop(&aux));
   }
 }

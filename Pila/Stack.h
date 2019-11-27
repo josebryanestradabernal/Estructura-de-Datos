@@ -6,5 +6,5 @@ typedef struct stack{
 }*STACK;
 void push(STACK *pila,int elemento);
 int pop(STACK *pila);
-void mostrarPila(STACK pila);
+void mostrarPila(STACK *pila);
 #endif
